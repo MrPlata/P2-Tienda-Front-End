@@ -80,6 +80,16 @@ h3{
 .navegacion__enlaces:hover{
     color: var(--secundario); 
 }
+/*GRID*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 /*PRODUCTOS*/
 .producto{
@@ -95,7 +105,7 @@ h3{
 
 }
 .producto__precio{
-    
+
 }
 
 
