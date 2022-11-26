@@ -52,6 +52,7 @@ h2{
 h3{
     font-size: 2.4rem;
 }
+
 /* ENCABEZADO */
 .header{
     display: flex;
@@ -80,10 +81,12 @@ h3{
 .navegacion__enlaces:hover{
     color: var(--secundario); 
 }
+
 /*GRID*/
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 @media (min-width: 768px) {
     .grid{
@@ -93,18 +96,28 @@ h3{
 
 /*PRODUCTOS*/
 .producto{
-
+    background-color: var(--primarioOscuro);
 }
 .producto__imagen{
-
+    padding: 1rem;
+    width: 100%;
 }
 .producto__informacion{
-
+    text-align: center;
 }
 .producto__nombre{
-
+    font-size: 4rem;
 }
 .producto__precio{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto__nombre,
+.producto__precio{
+    font-family: var(--fuentePrincipal);
+    margin: .5rem 0;
+    text-align: center;
+    line-height: 1.2;
 
 }
 
