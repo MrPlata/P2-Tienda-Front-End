@@ -6,7 +6,7 @@
     --blanco: #FFF;
     --negro: #000;
 
-    --fuentePrincipal: font-family: 'Staatliches', cursive;
+    --fuentePrincipal:'Staatliches', cursive;
 }
 
 html{
@@ -16,6 +16,7 @@ html{
 *, *:before, *:after{
     box-sizing: inherit;
 }
+
 /**GLOBALES**/
 body{
     background-color: var(--primario);
@@ -30,8 +31,8 @@ p{
 a{
     text-decoration: none;
 }
-ing{
-    width: 100%;
+img{
+    max-width: 100%;
 }
 .contenedor{
     max-width: 120rem;
@@ -50,4 +51,64 @@ h2{
 }
 h3{
     font-size: 2.4rem;
+}
+/* ENCABEZADO */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0rem;
+}
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    /*gap: 2rem;*/
+}
+.navegacion__enlaces{ 
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.navegacion__enlaces:last-of-type{
+    margin-right: 0;
+}
+.navegacion__enlaces--activo,
+.navegacion__enlaces:hover{
+    color: var(--secundario); 
+}
+
+/*PRODUCTOS*/
+.producto{
+
+}
+.producto__imagen{
+
+}
+.producto__informacion{
+
+}
+.producto__nombre{
+
+}
+.producto__precio{
+    
+}
+
+
+
+
+/*FOOTER*/
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.footer__text{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
 }
