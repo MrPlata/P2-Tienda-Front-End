@@ -154,23 +154,10 @@ h3{
 }
 
 /* NOSOTROS */
-
-/*.info{
-    text-align: center;
-    margin: 3rem;
-}
-.nosotrosimg{
-    max-width: 90%;
-}
-.icnos{
-    display: flex;
-    align-items: center;
-}
-*/
 .nosotros{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    margin: 2rem;
+    margin: 1rem;
 }
 @media (min-width: 768px) {
     .nosotros{
@@ -186,6 +173,9 @@ h3{
     .nosotros__imagen{
         grid-column: 2 / 3;
     }
+}
+.nosotors__contenido{
+    margin: 2rem;
 }
 
 
